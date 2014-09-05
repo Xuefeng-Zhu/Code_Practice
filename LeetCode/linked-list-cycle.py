@@ -11,10 +11,10 @@ class Solution:
     def hasCycle(self, head):
         a = head
         b = head
-        while a is not None and a.next is not None:
+        while b is not None and b.next is not None:
             a = a.next
             b = b.next.next
-            if a.val == b.val:
+            if a == b:
                 return True
         return False
         
